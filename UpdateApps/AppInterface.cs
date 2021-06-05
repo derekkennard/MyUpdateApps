@@ -8,12 +8,12 @@ namespace UpdateApps
 {
     internal abstract class AppInterface
     {
-        private static readonly string accessKey = "AKIAQYWJGQAKOG22ISDD";
+        private static readonly string accessKey = "************";
 
         private static readonly string secretKey =
-            "3s+WiBw7L3CTJJbepQSg3LUUg8d3YFjjZBBO9YLV";
+            "************";
 
-        protected static readonly string BucketName = "phm-deployment";
+        protected static readonly string BucketName = "bucket-name";
 
         protected static readonly TransferUtility FileTransferUtility =
             new(
