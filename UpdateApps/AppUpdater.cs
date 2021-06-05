@@ -13,14 +13,14 @@ namespace UpdateApps
         public void DoUpdate(ListObjectsResponse resp, AmazonS3Client s3,
             ListObjectsRequest req, string bucket, TransferUtility trans)
         {
-            var bucketName = "phm-deployment";
+            var bucketName = "bucket-name";
             var auToFolder =
-                @"C:\Program Files (x86)\ProHealth Pharmacy Solutions\AppUpdater";
+                @"C:\Program Files (x86)\AppUpdater";
 
             if (Directory.Exists(auToFolder))
             {
                 var auToFolderNewFile =
-                    @"C:\Program Files (x86)\ProHealth Pharmacy Solutions\AppUpdaterPend";
+                    @"C:\Program Files (x86)\AppUpdaterPend";
 
                 Console.WriteLine(
                     "Starting AWS Connection for Transfer Utility");
@@ -64,7 +64,7 @@ namespace UpdateApps
                 Console.WriteLine(
                     "Start XCOPY to move new files...");
                 Process.Start(
-                    "C:\\Program Files (x86)\\ProHealth Pharmacy Solutions\\AppUpdaterPend\\RunCopy.bat");
+                    "C:\\Program Files (x86)\\AppUpdaterPend\\RunCopy.bat");
                 Console.WriteLine("XCOPY Complete!");
                 Console.WriteLine("");
                 Console.WriteLine(
