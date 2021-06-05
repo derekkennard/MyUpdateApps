@@ -8,10 +8,10 @@ namespace UpdateApps
 {
     internal abstract class AppInterface
     {
+        // add your AWS Key
         private static readonly string accessKey = "************";
-
-        private static readonly string secretKey =
-            "************";
+        // add your AWS Secret Key
+        private static readonly string secretKey = "************";
 
         protected static readonly string BucketName = "bucket-name";
 
