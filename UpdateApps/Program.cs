@@ -24,13 +24,6 @@ namespace UpdateApps
                 switch (contentKey.ToLower())
                 {
                     // Print the value of the variable (input from user), which will display the input value
-                    case "rms":
-                    {
-                        var rms = new RmsUpdate();
-                        rms.DoUpdate(Response, S3Client, Request, BucketName,
-                            FileTransferUtility);
-                        break;
-                    }
                     case "test":
                         Console.WriteLine(
                             "This is a test of the emergency broadcast system... This is only....... OH MY GOSH, WE'RE ALL GONNA DIE!!!...");
